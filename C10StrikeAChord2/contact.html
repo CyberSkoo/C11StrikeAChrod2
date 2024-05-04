@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" >
+<!--
+    Kevin Flores
+    File Name: contact.html
+    Date: 04/12/24
+-->
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="android-chrome-192.png">
+    <title> Strike A Chord </title>
+</head>
+<body>
+     <!--Mobile NAV-->
+     <nav class="mobile-nav">
+        <div id="menu-links">
+            <li><a href="index.html">Home &nbsp; &#124; &nbsp;</a></li>
+            <li><a href="lessons.html">Lessons &nbsp; &#124; &nbsp;</a></li>
+            <li><a href="instructors.html">Instructors &nbsp; &#124; &nbsp;</a></li>
+            <li><a href="rentals.html">Rentals &nbsp; &#124; &nbsp;</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </div>
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+    </nav>
+    <header>
+        <h1><span class="tablet-desk">&#9836;</span>Strike A Chord</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home &nbsp; &#124; &nbsp;</a></li>
+            <li><a href="lessons.html">Lessons &nbsp; &#124; &nbsp;</a></li>
+            <li><a href="instructors.html">Instructors &nbsp; &#124; &nbsp;</a></li>
+            <li><a href="rentals.html">Rentals &nbsp; &#124; &nbsp;</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <h2>Contact us today for your first lesson</h2>
+        <a href="tel:+18145559228">(814) 555-9228</a>
+        <p>Email: <a href="mailto:lessons@strikeachord.net" class="email-link">lessons@strikeachord.net</a></p>
+        <p>We are located at: 1122 Music Lane, Chicago, IL 60007</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190256.1961556355!2d-87.89676930680804!3d41.83361516159191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL!5e0!3m2!1sen!2sus!4v1710026123748!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+
+    </footer>
+    
+
+    <main>
+        <div id="contact">
+            <div id="hero">
+                <div class="tab-desk"></div> <!-- This div seems incomplete, assuming it's a placeholder -->
+            </div>
+        </div>
+        <div id="form">
+            <h2>Complete the form below and one of our staff members will contact you.</h2>
+            <form class="form-grid">
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label for="fName">First Name:</label>
+                    <input type="text" name="fName" id="fName">
+                    <label for="lName">Last Name:</label>
+                    <input type="text" name="lName" id="lName"> 
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                    
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Musical Interest</legend>
+                    <p>I am interested in:</p>
+                    
+                    <label for="guitarles"><input type="checkbox" name="interest" id="guitarles" value="Guitar Lessons">Guitar Lessons</label>
+                    <label for="piano"><input type="checkbox" name="interest" id="pianoles" value="Piano Lessons">Piano Lessons</label>
+                    <label for="violin"><input type="checkbox" name="interest" id="violinles" value="Violin Lessons">Violin Lessons</label>
+                    
+                    <label for="rent"><input type="checkbox" name="interest" id="rent" value="Rental Equipment">Rental Equipment</label> 
+                </fieldset> 
+                <input type="submit" id="submit" value="Submit" class="btn">
+            </form>
+        </div>
+    </main>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
